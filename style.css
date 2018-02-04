@@ -1,0 +1,169 @@
+body{
+	margin: 0px;
+	padding:0px;
+	background-color: #70faf0;
+background:linear-gradient(180deg,#70faf0, #888 50%,#70faf0);
+	background-attachment: fixed;
+	background-image:url(img1/img1.jpeg);
+}
+.body1 {
+  position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+  z-index: 1;
+opacity: 0.3;
+	overflow: hidden;
+	
+  }
+@font-face {
+font-family:'ANGE';
+	src:url('Raleway.ttf');
+}
+.card{
+	z-index: 2;
+line-height: 45px;
+width:150px;
+height:45px;
+background-color:white;
+position:relative;
+top:388px;
+	
+	cursor: pointer;
+	left: 347px;
+margin:10px;
+	border-radius: 20px;
+display: inline-block;
+
+	font-size: 24px;
+	text-align: center;
+	color:#123456;;
+box-shadow:1px 4px 2px 1px ;
+
+}
+#one, #two ,#three{
+height:10px;
+	z-index: 2;
+	width:10px;
+position:relative;
+	top:-117px;
+	left: 38%;
+	background-color:white;
+	border-radius:10px;
+	padding:10;
+	display: inline-block
+
+}
+h1{
+	align-content: center;
+	margin: auto;
+	position: relative;
+	top: 297px;
+	color:#123456;
+
+	width:260px;
+	
+	z-index: 2;
+border: 1px solid #123456;
+	border-width:0px 0px 1px 0px;
+	text-align: center;
+}
+h1:first-letter {
+position: relative;
+font-size:60px;
+text-align: center;
+line-height: 10px;
+
+	z-index: 2;
+}
+h2{
+	position: relative;
+top:282px;
+	text-align: center;
+	font-family: ANGE;
+color:#123456;
+	
+	z-index: 2;
+}
+#social{
+	
+	z-index: 2;
+  height:30px;
+	width: 30px;
+	background-color:white;
+	border-radius: 30px;
+	display: inline-block;
+	position: relative;
+  top: 478px;
+	left: 8.5%;
+	text-align: center;
+	vertical-align: bottom;
+	line-height: 30px;
+  box-shadow: 1px 2px 3px;
+      }
+.fa-twitter:hover 
+{
+color:#55acee;}
+.fa-facebook:hover{
+color: #3b5999;}
+.fa-linkedin:hover{
+	color: #0077B5;
+}
+.fa-google-plus:hover{
+	color:#dd4b39;
+}
+#menu{
+	height:40px;
+	width: 40px;
+	background-color: white;
+	z-index: 2;
+	border-radius: 40px;
+	font-size:30px;
+	position: relative;
+	left: 610px;
+	text-align: center;
+	display: inline-block;
+	top: -83px;
+	color: #123456;
+	margin: 1px;
+	
+}
+.card > .fa-heart{
+	opacity: 0;
+left:45%;
+}
+.card:hover{
+	box-shadow: 0 0 0 0;
+	color: white;}
+.card:hover > .fa-heart{
+opacity: 1;
+color:red;
+	--lightseagreen
+	position: absolute;
+	left:45%px;
+	
+  top:10px;
+	
+	animation: slide .4s ease-in-out;
+}
+.card > .fa-heart{
+	position: absolute;
+	
+	
+}
+@keyframes slide{
+	0%{
+position: absolute;
+	top:30px;
+	left:45%;
+		opacity: .1;
+	}
+	100%{
+position: absolute;
+		top: 10px;
+		left: 45%;
+		opacity: 1;
+	}
+}
+.card > i{
+margin:1px auto 1px auto}
