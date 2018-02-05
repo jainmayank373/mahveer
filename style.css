@@ -1,92 +1,81 @@
 body{
 	margin: 0px;
 	padding:0px;
-	background-color: #70faf0;
-background:linear-gradient(180deg,#70faf0, #888 50%,#70faf0);
-	background-attachment: fixed;
-	background-image:url(img1/img1.jpeg);
+	  background:linear-gradient(180deg,#70faf0, #888 50%,#70faf0);
+	animation: 80s imgslider infinite ease-in;
+background-size: 100%;
 }
 .body1 {
   position: absolute;
 	height: 100%;
 	width: 100%;
-	background-color: black;
+	background-color:firebrick;
   z-index: 1;
-opacity: 0.3;
-	overflow: hidden;
-	
+  opacity: 0.3;
   }
 @font-face {
-font-family:'ANGE';
+  font-family:'ANGE';
 	src:url('Raleway.ttf');
 }
 .card{
 	z-index: 2;
-line-height: 45px;
-width:150px;
-height:45px;
-background-color:white;
-position:relative;
-top:388px;
-	
+  line-height: 45px;
+  width:150px;
+  height:45px;
+  background-color:white;
+  position:relative;
+  top:500px;
 	cursor: pointer;
 	left: 347px;
-margin:10px;
+  margin:10px;
 	border-radius: 20px;
-display: inline-block;
-
+  display: inline-block;
 	font-size: 24px;
 	text-align: center;
 	color:#123456;;
-box-shadow:1px 4px 2px 1px ;
-
+  box-shadow:1px 2px 2px 1px ;
 }
 #one, #two ,#three{
-height:10px;
+  height:10px;
 	z-index: 2;
 	width:10px;
-position:relative;
-	top:-117px;
+  position:relative;
 	left: 38%;
 	background-color:white;
 	border-radius:10px;
 	padding:10;
 	display: inline-block
-
 }
 h1{
-	align-content: center;
 	margin: auto;
-	position: relative;
-	top: 297px;
-	color:#123456;
-
-	width:260px;
-	
+	position: absolute;
+  color:#123456;
+  left:50px;
+	width:80%;
 	z-index: 2;
-border: 1px solid #123456;
-	border-width:0px 0px 1px 0px;
-	text-align: center;
-}
+  border: 1px solid white;
+  border-width:0px 0px 1px 0px ;
+	top: 10px;
+	color:white;
+  }
 h1:first-letter {
-position: relative;
-font-size:60px;
-text-align: center;
-line-height: 10px;
-
-	z-index: 2;
+       position: relative;
+       font-size:60px;
+       text-align: center;
+       z-index: 2;
 }
 h2{
-	position: relative;
-top:282px;
-	text-align: center;
+	position: absolute;
+	color:white;
 	font-family: ANGE;
-color:#123456;
-	
+	width:50%;
+  top: 60px;
+	left: 130px;
+	border: 1px solid white;
+border-width: 0px 0px 1px 0px;
 	z-index: 2;
-}
+		}
 #social{
-	
 	z-index: 2;
   height:30px;
 	width: 30px;
@@ -94,7 +83,7 @@ color:#123456;
 	border-radius: 30px;
 	display: inline-block;
 	position: relative;
-  top: 478px;
+  top: 580px;
 	left: 8.5%;
 	text-align: center;
 	vertical-align: bottom;
@@ -103,9 +92,9 @@ color:#123456;
       }
 .fa-twitter:hover 
 {
-color:#55acee;}
+  color:#55acee;}
 .fa-facebook:hover{
-color: #3b5999;}
+  color: #3b5999;}
 .fa-linkedin:hover{
 	color: #0077B5;
 }
@@ -123,7 +112,7 @@ color: #3b5999;}
 	left: 610px;
 	text-align: center;
 	display: inline-block;
-	top: -83px;
+	top: 40px;
 	color: #123456;
 	margin: 1px;
 	
@@ -136,27 +125,22 @@ left:45%;
 	box-shadow: 0 0 0 0;
 	color: white;}
 .card:hover > .fa-heart{
-opacity: 1;
-color:red;
-	--lightseagreen
+  opacity: 1;
+  color:#123456;
 	position: absolute;
 	left:45%px;
-	
-  top:10px;
-	
+	top:10px;
 	animation: slide .4s ease-in-out;
 }
 .card > .fa-heart{
 	position: absolute;
-	
-	
-}
+	}
 @keyframes slide{
 	0%{
 position: absolute;
 	top:30px;
 	left:45%;
-		opacity: .1;
+	opacity: .1;
 	}
 	100%{
 position: absolute;
@@ -167,3 +151,46 @@ position: absolute;
 }
 .card > i{
 margin:1px auto 1px auto}
+
+@keyframes imgslider{
+	0%{
+background-image: url(img1/img1.jpeg);
+		
+	}
+	20%{
+		background-image: url(img1/img2.jpeg);
+
+	}
+	40%{
+		background-image:url(img1/img3.jpeg);
+	}
+		60%{
+background-image: url(img1/img4.jpeg);
+	}
+	80%{
+	background-image: url(img1/img5.jpeg);
+	}
+	100%{
+		background-image:url(img1/img3.jpeg);
+	}
+}
+h3{
+ 	position:absolute;
+	top: 52.6%;
+	font-family:ANGE;
+	width: 100%;
+	color:white;
+z-index:2;
+}
+.typo{
+	z-index: 1;
+	position: absolute;
+	left:33%;
+  top: 35%;
+	height: 200px;
+	width: 500px;
+  text-align: center;
+  margin: 1px auto 1px auto;
+ --background:linear-gradient(to right, rgba(1,100,100,.), rgba(100,10,100,.3));
+	  ---background:linear-gradient(180deg,#70faf0, #888 50%,#70faf0);
+}
