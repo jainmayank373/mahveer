@@ -75,24 +75,34 @@ h2{
 border-width: 0px 0px 1px 0px;
 	z-index: 2;
 		}
-#social{
-	z-index: 2;
-  height:30px;
-	width: 30px;
-	background-color:white;
-	border-radius: 30px;
-	display: inline-block;
-	position: relative;
-  top: 580px;
-	left: 8.5%;
+#social-head{
+
+	width:40%;height:10%;
+z-index:1;
+	position: absolute;
+	top: 90%;
+padding-left: 43%;
+}
+.social{
+	
+	line-height: 40px;
 	text-align: center;
 	vertical-align: bottom;
-	line-height: 30px;
-  box-shadow: 1px 2px 3px;
-      }
+	position: white;
+	width:38px;height:38px;
+  
+	float:left;
+	color: whte;
+	background: white;
+	--mix-blend-mode: difference;
+  bottom:0;margin:6px;
+	border-radius: 38px;
+	border:0px solid #123456;
+	box-shadow: 3px 5px 10px 1px ;						 
+}
 .fa-twitter:hover 
 {
-  color:#55acee;}
+  color:white;}
 .fa-facebook:hover{
   color: #3b5999;}
 .fa-linkedin:hover{
