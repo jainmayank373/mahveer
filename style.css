@@ -332,10 +332,49 @@ border: none;
     border-radius: 50px;
 }
 
+#secondDiv{
+height:100%;
+width:100%;
+background-color:white;
+position: relative;
+    
+}
+.box{
+    position: relative;
+    margin-left:100px;
+    color:white;
+    height:150px;
+    width:150px;
+    background: cyan;
+    float: left;
+    transform: rotate(40deg);
+    box-shadow:21px 11px 53px -35px black;
+opacity: 0;
+}
+.box:nth-child(1){
+    top:250px;
 
+    left: 126px;
+}
 
+.box:nth-child(6){
+top: 72px;
+right: -795px;
+}
+.box:nth-child(2){
+top:264px;
+left: 16px;
+}
+.box:nth-child(3){
+    top:386px;
+    left: -87px;
+}
+.box:nth-child(4){
+    top:252px;
 
-
-
-
-
+    left: -221px;
+}
+.box:nth-child(5){
+    top:369px;
+    left: -327px;
+}
