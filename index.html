@@ -1,47 +1,92 @@
 <!DOCTYPE html>
 <html>
+
+<meta charset="utf-8">
+
 <head>
-	<title>Bussiness</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="fontawesome.css">
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <title>
+My Web
+    </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="font/fontawesome.min.css">
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 </head>
 <body>
+<div id="wrapper">
+    <div id="particles-js"></div>
 
-<div class="body1">
-	
+    <div id="dot" onclick="hide()">
+        <div class="dot_sub"></div>
+        <div class="dot_sub"></div>
+        <div class="dot_sub"></div>
+    </div>
+
+    <div id="menu">
+        <div class="menu_sub"><i class="fa fa-home"></i></div>
+        <div class="menu_sub"><i class="fa fa-user "></i></div>
+        <div class="menu_sub"><i class="fa fa-phone"></i></div>
+    </div>
+    <div id="typo">
+        <div>Mahveer.in</div>
+
+    </div>
+    <div id="account">
+        <div class="account_sub">Login</div>
+        <div class="account_sub">SignUp</div>
+
+     </div>
+    <div id="social">
+        <div class="social_sub"><i class="fa fa-facebook"></i></div>
+        <div class="social_sub"><i class="fa fa-linkedin"></i></div>
+        <div class="social_sub"><i class="fa fa-google-plus"></i></div>
+        <div class="social_sub"><i class="fa fa-twitter"></i></div>
+    </div>
+
 </div>
-<div class="typo">
-    <h1>Mahaveer.in</h1>
-   	<h2>A Bussniess Portal</h2>
-   	<h3>"Be yourself Other's has already taken"</h3>
+<div id="formPage">
+    <form action="hello.php">
+       <!-- <img id="idimg" src="./img1/mayank.JPG">-->
+        <input type="text"  required name="Your Name">
+        <label name="Enter Your Name">Enter Your Id</label>
+        <div class="divider"></div>
+        <input type="text" required  name="Email">
+        <label>Email</label>
+        <button id="Submit">Submit</button>
+    </form>
 </div>
-	<div id="menu" ><i class="fa fa-home"></i></div>
-	<div id="menu"><i class="fa fa-phone"></i></div>
-	<div id="menu"><i class="fa fa-user"></i></div>
-   	<div id="one"></div>
-   	<div id="two"></div>
-  	<div id="three"></div>
-
-
-   	<div class="card">Login <i class="fa fa-heart"></i></div>
-   		
-
-  	<div class="card" >Sign Up <i class="fa fa-heart"></i></div>
-  	<div id="social-head">
-   		<div id="love">
-   			<div class="social"><i class="fa fa-linkedin"></i></div>
-   			<div class="social"><i class="fa fa-facebook"></i></div>
-   			<div class="social"><i class="fa fa-twitter"></i></div>   		
-   			<div class="social"><i class="fa fa-google-plus"></i></div>
-   		</div>
-   	</div>
-
 </body>
-<script type="text/javascript">
-	function chbg(color) {
-    document.getElementById('card').style.backgroundColor = color;
-}   
+<script type="text/javascript" src="script.js"></script>
+<script >
+
+    var id=document.getElementById('menu');
+    console.log(id);
+    var bol=false;
+    function hide() {
+        if(bol)
+        {
+            id.style.top="-10px";
+            id.style.visibility="hidden";
+
+        }
+        else{
+
+            id.style.visibility="visible";
+            id.style.top="-10px";
+            setTimeout(function(){
+
+                for(var i=-9;i<20;i++) {
+                    id.style.top = i + "px";
+                }
+            },5)
+
+        }
+        bol=!bol;
+
+    }
+
+
 </script>
+
 </html>
